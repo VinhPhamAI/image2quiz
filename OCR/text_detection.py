@@ -2,7 +2,7 @@ import pytesseract
 from PIL import Image
 
 # Đường dẫn tới hình ảnh chứa câu hỏi trắc nghiệm
-image_path = 'images/de-van-2024.jpg'
+image_path = 'images/practice1.jpg'
 image = Image.open(image_path)
 
 # Sử dụng Tesseract để nhận diện văn bản từ hình ảnh
