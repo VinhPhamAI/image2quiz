@@ -4,6 +4,18 @@ from tkinter import messagebox
 import docx2pdf
 import win32com.client
 import os
+from huggingface_hub import from_pretrained_keras
+from PIL import Image
+
+import tensorflow as tf
+import numpy as np
+import requests
+
+import requests
+from PIL import Image
+from io import BytesIO
+from diffusers import LDMSuperResolutionPipeline
+import torch
 
 
 class PDF2img: 
@@ -69,4 +81,21 @@ class pptx2img:
 
 
 
+class Image_denoising: 
+    def __init__(self): 
+        
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        self.model_id = "CompVis/ldm-super-resolution-4x-openimages"
+        self.pipeline = LDMSuperResolutionPipeline.from_pretrained(self.model_id)
+        self.pipeline = self.pipeline.to(device)
+    
+    def denoising(self, img): 
+        low_res_img = Image.open(BytesIO(img)).convert("RGB")
+        low_res_img = low_res_img.resize((128, 128))
+        upscaled_image = self.pipeline(low_res_img, num_inference_steps=100, eta=1).images[0]
+        return upscaled_image
+    
+    def save(self, img, save_path): 
+        img.save(save_path)
 
+    
