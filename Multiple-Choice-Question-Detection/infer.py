@@ -34,9 +34,6 @@ class Model:
         # load ảnh 
         image = cv2.imread(image_path)
 
-        
-
-
         if image is None: return image 
 
         result = self.model.predict(source = image, conf = 0.2, iou = 0.8)
@@ -80,8 +77,7 @@ class Model:
 
         plt.show()
 
-        
-
+    
 
     def save(self, folder_path): 
         cwd = os.getcwd()        
@@ -105,8 +101,8 @@ class Model:
     
 
 if __name__ == '__main__': 
-    model = Model('Multiple-Choice-Question-Detection/best.pt')
-    model.detect('Multiple-Choice-Question-Detection/8-de-thi-vao-lop-10-mon-toan-01.png')
+    model = Model('dla.pt')
+    model.detect('2hinhhoc.png')
     
     
 
