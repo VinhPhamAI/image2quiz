@@ -1,0 +1,32 @@
+{
+    "question1": {
+        "Question": "Which of the following techniques is used for tokenization in NLP?\n\nA) Stemming\nB) Lemmatization\nC) Text Segmentation\nD) Named Entity Recognition"
+    },
+    "question2": {
+        "Question": "What does the acronym 'NER' stand for in NLP?\n\nA) Named Entity Recognition\nB) Natural Entity Retrieval\nC) Named Entity Retrieval\nD) Natural Entity Recognition"
+    },
+    "question3": {
+        "Question": "In word embeddings, which model is known for producing dense vector representations of words?\n\nA) Bag of Words (BoW)\nB) Term Frequency-Inverse Document Frequency (TF-IDF)\nC) Word2Vec\nD) Latent Dirichlet Allocation (LDA)"
+    },
+    "question4": {
+        "Question": "Which of the following algorithms is used for sentiment analysis?\n\nA) K-Means Clustering\nB) Support Vector Machines (SVM)\nC) Latent Semantic Analysis (LSA)\nD) Principal Component Analysis (PCA)"
+    },
+    "question5": {
+        "Question": "What is the purpose of 'stop words' in text preprocessing?\n\nA) To remove punctuation\nB) To filter out common words that do not carry significant meaning\nC) To normalize text case\nD) To perform stemming"
+    },
+    "question6": {
+        "Question": "Which deep learning architecture is commonly used for sequence-to-sequence tasks in NLP?\n\nA) Convolutional Neural Networks (CNNs)\nB) Recurrent Neural Networks (RNNs)\nC) Generative Adversarial Networks (GANs)\nD) Autoencoders"
+    },
+    "question7": {
+        "Question": "In NLP, what does the term 'lemmatization' refer to?\n\nA) Removing stop words\nB) Reducing words to their base or root form\nC) Splitting text into sentences\nD) Encoding text into numerical vectors"
+    },
+    "question8": {
+        "Question": "Which method is commonly used to measure the similarity between two documents in NLP?\n\nA) Euclidean Distance\nB) Cosine Similarity\nC) Manhattan Distance\nD) Jaccard Similarity"
+    },
+    "question9": {
+        "Question": "What does the 'bag of words' model represent?\n\nA) A list of words in their original order\nB) A set of all possible words in a text corpus\nC) A collection of word frequencies in a document\nD) A sequence of word embeddings"
+    },
+    "question10": {
+        "Question": "Which of the following is NOT a typical application of NLP?\n\nA) Speech Recognition\nB) Image Classification\nC) Machine Translation\nD) Text Classification"
+    }
+}

@@ -1,0 +1,60 @@
+Which of the following techniques is used for tokenization in NLP?
+
+A) Stemming
+B) Lemmatization
+C) Text Segmentation
+D) Named Entity Recognition
+What does the acronym 'NER' stand for in NLP?
+
+A) Named Entity Recognition
+B) Natural Entity Retrieval
+C) Named Entity Retrieval
+D) Natural Entity Recognition
+In word embeddings, which model is known for producing dense vector representations of words?
+
+A) Bag of Words (BoW)
+B) Term Frequency-Inverse Document Frequency (TF-IDF)
+C) Word2Vec
+D) Latent Dirichlet Allocation (LDA)
+Which of the following algorithms is used for sentiment analysis?
+
+A) K-Means Clustering
+B) Support Vector Machines (SVM)
+C) Latent Semantic Analysis (LSA)
+D) Principal Component Analysis (PCA)
+What is the purpose of 'stop words' in text preprocessing?
+
+A) To remove punctuation
+B) To filter out common words that do not carry significant meaning
+C) To normalize text case
+D) To perform stemming
+Which deep learning architecture is commonly used for sequence-to-sequence tasks in NLP?
+
+A) Convolutional Neural Networks (CNNs)
+B) Recurrent Neural Networks (RNNs)
+C) Generative Adversarial Networks (GANs)
+D) Autoencoders
+In NLP, what does the term 'lemmatization' refer to?
+
+A) Removing stop words
+B) Reducing words to their base or root form
+C) Splitting text into sentences
+D) Encoding text into numerical vectors
+Which method is commonly used to measure the similarity between two documents in NLP?
+
+A) Euclidean Distance
+B) Cosine Similarity
+C) Manhattan Distance
+D) Jaccard Similarity
+What does the 'bag of words' model represent?
+
+A) A list of words in their original order
+B) A set of all possible words in a text corpus
+C) A collection of word frequencies in a document
+D) A sequence of word embeddings
+Which of the following is NOT a typical application of NLP?
+
+A) Speech Recognition
+B) Image Classification
+C) Machine Translation
+D) Text Classification
