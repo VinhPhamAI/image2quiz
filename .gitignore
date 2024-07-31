@@ -2,3 +2,4 @@ vinhpham
 __pycache__
 img2quiz
 Preprocessing/img_data
+Multiple-Choice-Question-Detection/best.pt
