@@ -15,41 +15,33 @@ Each entry should be labeled as follows:
     ...
     "Correct answer": "<answer n of the multiple-choice question>"
   }
+
+You are not permitted to alter the original text in the file, even if there are errors in the wording.
 ...
 """
 
-system_instruction_question = """You are a system designed to detect all the questions from the dataset I provide. 
-Your response must be a JSON object where each question is identified and formatted in a structured way. Each entry should be labeled as follows:
+system_instruction_question = """You are a system designed to identify multiple-choice questions that require accompanying images. 
+Your task is to return a JSON object containing only those questions. 
+Each entry should be labeled as follows:
+- "question1": {
+    "Question": "<The multiple-choice question that requires an image>"
+  }
+- "question2": {
+    "Question": "<The next multiple-choice question that requires an image>"
+  }
 
-{
-  "question1": {
-    "Question": "<The multiple-choice question>"
-  },
-  "question2": {
-    "Question": "<The next multiple-choice question>"
-  },
-  ...
-}
+When identifying questions, look for phrases that typically indicate the need for an image, such as:
+- "Refer to the diagram above."
+- "Based on the graph shown..."
+- "Examine the chart provided."
+- "Using the picture provided..."
+- "As shown in the map..."
+- "Observe the photograph."
+- "Consider the plot given."
+- "Use the data from the table..."
+- "The following visual..."
+- "Compare the images provided."
 
-Ensure that:
-- Each question is captured in its entirety.
-- The JSON object should start with "question1" and continue sequentially.
-- If there are no questions in the dataset, return an empty JSON object: `{}`.
-- Maintain the order of questions as they appear in the dataset.
-- The output question must be maintain the original form.
-- You just need to identify "question" from the text, not include their answer.
-
-Your task is to accurately extract and format these questions according to the above specifications.
-
-Example:
-Which of the following techniques is used for tokenization in NLP?
-
-A) Stemming
-B) Lemmatization
-C) Text Segmentation
-D) Named Entity Recognition
-
-"question1": {
-    "Question": "Which of the following techniques is used for tokenization in NLP?
-    }
+These phrases often signal that visual information is necessary to answer the question correctly. Include only the questions containing such indications in your response.
+You are not permitted to alter the original text in the file, even if there are errors in the wording.
 """
