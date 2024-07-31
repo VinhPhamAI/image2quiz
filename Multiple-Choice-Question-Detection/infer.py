@@ -111,7 +111,7 @@ class Model:
 
 if __name__ == '__main__': 
     model = Model('dla.pt')
-    model.detect('2hinhhoc.png')
+    model.detect('hinhhoc.png')
     img_position = model.img_position
     # lấy vị trí ảnh 
     print(model.img_position)

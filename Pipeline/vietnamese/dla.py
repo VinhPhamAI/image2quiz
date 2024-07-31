@@ -43,7 +43,7 @@ class Model:
         # chạy model 
         result = self.model.predict(source = image, conf = 0.2, iou = 0.8)
 
-        result[0].save("result.png")
+        result[0].save("folder_check/dla_result.png")
         # duyệt qua từng box của ảnh 
         boxes = result[0].boxes
 
@@ -109,12 +109,11 @@ class Model:
         return result
     
 
-if __name__ == '__main__': 
+def get_image_position(path):
     model = Model('dla.pt')
-    model.detect('images/1.png')
+    model.detect(path)
     img_position = model.img_position
-    # lấy vị trí ảnh 
-    print(model.img_position)
+    return img_position
 
 
 
