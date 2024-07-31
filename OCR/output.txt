@@ -1,32 +1,45 @@
-Final Examination
+‘Statistic 51 Practice Mier 3 Solutions ~ Mike Kewask
 
-(5121: Inston to Antti! nligence
-Stanford University
-Smee 2000
+Statistics 151 Practice Midterm 3 Solutions ~ Multiple Choice +
+Written (50 minutes)
 
-Examination Instructions
+‘outa mts compet cars “
+“Thee sural of mrs (ai cis nd ng anoer bln work ch.
+‘Sowalyernon rng ane sn eo al se
 
-‘Youtve 3 hus completes xan, The comple exams wrth 38% of your couse grade, The
-{69 scons, wor al o 3 pois, Fees question we have spell th aonb of ois at 5
-‘Woah, Sac ou have 180 ines he compe exam, ou should send aprox) 20 mines on
-‘Sch oben please pe Yous and watch he ok
+Mutiple Choie (18 questions)
 
-Pease how your workin he pce povided, we wil var pati et you ned meee
-spose yuma ve aioe fp, rove ou tthe in wh Sorex.
+1. Suppose hat tan are two independent events wih PU)
+A) O42, B) 060. C) 008. D) 082.
 
-Stanford University Honor Code
+2 and AB) = 4 PLA and nt 8) 6
 
-Simcha ree
-“ marycemyateres era niecmy nie ee
-ane
-hie ee eee
-Fee ema
+2 ven has probity Ot Even has probability 0.5, IFA an Bare disjoint thn te
+probatity tht hth events oars
+‘AYO, B) 00, ©) 09. D) 02.
 
-Nes ogtrin elo optima cnaionsorhoanbie sake wok "
+‘Use the falloing answer question 3
 
-Signature
+‘The temperate ny random feation na Kn sadn the manicure of rik normaly dsb
+‘sith mean of 1000 ands standard deviation of 0,
 
-Insc itt te wal ss ysl el espn leo Sed Unies Hon Cs
+2. bik ae fied a temperature above! 23°, they wil ruck aed mst be disposed ofthe
+licks are placed randomly teoughout he lathe ropaton af ck hat crack ding the
+fing process closest
+A) OA2%, B) 228%, C) 47.72% D) 49.38%,
 
-Nae pit: sine,
+(Use the allowing to answer question 4
 
+syste has wo components ht operat in parallel as shown ia the diagram below. Because the
+onponeas operate sn parallel at least one he coponents must faction property fhe system i to
+funtion propery The potabities of faire forthe components {and dering one period of operation
+‘are_20 and 03, resgetivsy. Let deol the eve thatthe component | a ding one period of
+‘pcation and G dente the event that component 2 als uring one period of operation. The component
+‘ures are independent
+
+Cr
+np ouput
+*,
+
+| oxy
+=o)
