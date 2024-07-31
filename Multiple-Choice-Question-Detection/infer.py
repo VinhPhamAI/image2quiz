@@ -10,7 +10,9 @@ names: {0: 'Caption', 1: 'Footnote', 2: 'Formula', 3: 'List-item', 4: 'Page-foot
 '''
 class Model: 
     def __init__(self, path): 
+        # khởi tạo model 
         self.model = YOLO(path)
+        # màu của bbox 
         self.ENTITIES_COLORS = {
             "Caption": (191, 100, 21),
             "Footnote": (2, 62, 115),
@@ -24,9 +26,11 @@ class Model:
             "Text": (0, 153, 221),
             "Title": (196, 51, 2)
         }
+        # những box nằm trong ảnh doc
         self.image_in_img = []
+        # những box text nằm trong ảnh doc
         self.text_in_img = []
-
+        # vị trí của ảnh - return (top left - bottom right)
         self.img_position = {}
         self.BOX_PADDING = 2
 
@@ -34,20 +38,19 @@ class Model:
         # load ảnh 
         image = cv2.imread(image_path)
 
-        
-
-
         if image is None: return image 
-
+        # chạy model 
         result = self.model.predict(source = image, conf = 0.2, iou = 0.8)
-        result[0].save("result.png")
+
+        # result[0].save("result.png")
+        # duyệt qua từng box của ảnh 
         boxes = result[0].boxes
 
         for box in boxes: 
             detection_clf  = round(box.conf.item(), 2)
             cls = list(self.ENTITIES_COLORS)[int(box.cls)]
 
-
+            # ví trí của box
             start_box = (int(box.xyxy[0][0]), int(box.xyxy[0][1]))
             end_box = (int(box.xyxy[0][2]), int(box.xyxy[0][3]))
 
@@ -57,6 +60,7 @@ class Model:
 
             if box.cls == 8 or box.cls == 6: 
                 self.image_in_img.append(sub_img)
+                # lưu vị trí ảnh vào trong dictionary 
                 self.img_position[len(self.image_in_img) - 1] =  {(start_box, end_box)}
 
                 continue 
@@ -82,7 +86,7 @@ class Model:
 
         
 
-
+    # lưu lại ảnh vào trong folder_path 
     def save(self, folder_path): 
         cwd = os.getcwd()        
         folder_path = os.path.join(cwd, folder_path)
@@ -108,6 +112,8 @@ if __name__ == '__main__':
     model = Model('Multiple-Choice-Question-Detection/best.pt')
     model.detect('Multiple-Choice-Question-Detection/8-de-thi-vao-lop-10-mon-toan-01.png')
     
+    # lấy vị trí ảnh 
+    print(model.img_position)
     
 
 
