@@ -1,0 +1,37 @@
+{
+    "question1": {
+        "Câu hỏi": "Cho bảng số liệu:\nTỔNG DỰ TRỮ QUỐC TẾ CỦA MỘT SỐ QUỐC GIA NĂM 2015 VÀ NĂM 2020\n(Đơn vị: Triệu đô la Mỹ)\nNăm | Lào | Thái Lan | Việt Nam | In-đô-nê-xi-a\n------- | -------- | -------- | -------- | --------\n2015 | 1043     | 151266   | 28250   | 103268\n2020 | 1393     | 248743   | 94834   | 131139\n\n(Nguồn: Niên giám thống kê Việt Nam 2021, NXB Thống kê, 2022)\n\nTheo bảng số liệu, nhận xét nào sau đây đúng khi so sánh tổng dự trữ quốc tế của một số quốc gia năm 2020\nvới năm 2015?",
+        "Đáp án 1": "Việt Nam tăng chậm hơn In-đô-nê-xi-a.",
+        "Đáp án 2": "In-đô-nê-xi-a tăng nhanh hơn Lào.",
+        "Đáp án 3": "Thái Lan tăng chậm hơn Việt Nam.",
+        "Đáp án 4": "Lào tăng nhanh hơn Thái Lan."
+    },
+    "question2": {
+        "Câu hỏi": "Căn cứ vào Atlat Địa lí Việt Nam trang Khí hậu, cho biết trong các trạm khí tượng sau đây, trạm nào có nhiệt độ tháng XII cao nhất?",
+        "Đáp án 1": "Sa Pa",
+        "Đáp án 2": "Lạng Sơn",
+        "Đáp án 3": "Cần Thơ",
+        "Đáp án 4": "Điện Biên Phủ"
+    },
+    "question3": {
+        "Câu hỏi": "Căn cứ vào Atlat Địa lí Việt Nam trang Các ngành công nghiệp trọng điểm, cho biết nhà máy nhiệt điện nào có công suất lớn nhất trong các nhà máy sau đây?",
+        "Đáp án 1": "Ninh Bình",
+        "Đáp án 2": "Na Dương",
+        "Đáp án 3": "Uông Bí",
+        "Đáp án 4": "Phả Lại"
+    },
+    "question4": {
+        "Câu hỏi": "Than đá là sản phẩm của ngành công nghiệp",
+        "Đáp án 1": "hóa chất",
+        "Đáp án 2": "cơ khí",
+        "Đáp án 3": "năng lượng",
+        "Đáp án 4": "luyện kim"
+    },
+    "question5": {
+        "Câu hỏi": "Cho biểu đồ:\n\nTRỊ GIÁ XUẤT KHẨU HÀNG HÓA VÀ DỊCH VỤ CỦA IN-ĐÔ-NÊ-XI-A VÀ PHI-LIP-PIN GIAI ĐOẠN 2015 - 2020\n(Số liệu theo Niên giám thống kê Việt Nam 2021, NXB Thống kê, 2022)\n\nTheo biểu đồ, nhận xét nào sau đây đúng về thay đổi trị giá xuất khẩu hàng hóa và dịch vụ năm 2020 so với năm 2015 của In-đô-nê-xi-a và Phi-lip-pin?",
+        "Đáp án 1": "Phi-lip-pin tăng ít hơn In-đô-nê-xi-a",
+        "Đáp án 2": "Phi-lip-pin tăng chậm hơn In-đô-nê-xi-a",
+        "Đáp án 3": "In-đô-nê-xi-a tăng gấp hai lần Phi-lip-pin",
+        "Đáp án 4": "In-đô-nê-xi-a giảm và Phi-lip-pin tăng"
+    }
+}

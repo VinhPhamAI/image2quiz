@@ -28,7 +28,6 @@ def extract_bounding_boxes(image_path, image_position, output_dir='image_save/')
     # Duyệt qua từng bounding box trong image_position
     for key, value in image_position.items():
         for idx, box in enumerate(value):
-            # Lấy tọa độ của bounding box
             top_left, bottom_right = box
             x1, y1 = top_left
             x2, y2 = bottom_right
@@ -37,7 +36,7 @@ def extract_bounding_boxes(image_path, image_position, output_dir='image_save/')
             cropped_image = image[y1:y2, x1:x2]
             
             # Tạo tên file cho phần hình ảnh đã cắt
-            cropped_filename = f"{key}_{idx}.png"
+            cropped_filename = f"{key}.png"
             cropped_path = os.path.join(output_dir, cropped_filename)
             
             # Lưu phần hình ảnh đã cắt
