@@ -1,37 +1,58 @@
 {
     "question1": {
-        "Câu hỏi": "Cho bảng số liệu:\nTỔNG DỰ TRỮ QUỐC TẾ CỦA MỘT SỐ QUỐC GIA NĂM 2015 VÀ NĂM 2020\n(Đơn vị: Triệu đô la Mỹ)\nNăm | Lào | Thái Lan | Việt Nam | In-đô-nê-xi-a\n------- | -------- | -------- | -------- | --------\n2015 | 1043     | 151266   | 28250   | 103268\n2020 | 1393     | 248743   | 94834   | 131139\n\n(Nguồn: Niên giám thống kê Việt Nam 2021, NXB Thống kê, 2022)\n\nTheo bảng số liệu, nhận xét nào sau đây đúng khi so sánh tổng dự trữ quốc tế của một số quốc gia năm 2020\nvới năm 2015?",
-        "Đáp án 1": "Việt Nam tăng chậm hơn In-đô-nê-xi-a.",
-        "Đáp án 2": "In-đô-nê-xi-a tăng nhanh hơn Lào.",
-        "Đáp án 3": "Thái Lan tăng chậm hơn Việt Nam.",
-        "Đáp án 4": "Lào tăng nhanh hơn Thái Lan."
+        "Câu hỏi": "Trong đường lối đổi mới của Đảng Cộng sản Việt Nam được đề ra tại Đại hội đại biểu toàn quốc lần thứ VI (12 - 1986), lĩnh vực nào được xác định là trọng tâm?",
+        "Đáp án 1": "Chính trị",
+        "Đáp án 2": "Văn hóa",
+        "Đáp án 3": "Tư tưởng",
+        "Đáp án 4": ""
     },
     "question2": {
-        "Câu hỏi": "Căn cứ vào Atlat Địa lí Việt Nam trang Khí hậu, cho biết trong các trạm khí tượng sau đây, trạm nào có nhiệt độ tháng XII cao nhất?",
-        "Đáp án 1": "Sa Pa",
-        "Đáp án 2": "Lạng Sơn",
-        "Đáp án 3": "Cần Thơ",
-        "Đáp án 4": "Điện Biên Phủ"
+        "Câu hỏi": "Trước Chiến tranh thế giới thứ hai, khu vực rơi vào vòng lệ thuộc nặng nề, trở thành thuộc địa của Mĩ là",
+        "Đáp án 1": "Bắc Phi",
+        "Đáp án 2": "Mĩ Latinh",
+        "Đáp án 3": "Đông Nam Á",
+        "Đáp án 4": "Tây Âu"
     },
     "question3": {
-        "Câu hỏi": "Căn cứ vào Atlat Địa lí Việt Nam trang Các ngành công nghiệp trọng điểm, cho biết nhà máy nhiệt điện nào có công suất lớn nhất trong các nhà máy sau đây?",
-        "Đáp án 1": "Ninh Bình",
-        "Đáp án 2": "Na Dương",
-        "Đáp án 3": "Uông Bí",
-        "Đáp án 4": "Phả Lại"
+        "Câu hỏi": "Thành tựu nào của cách mạng khoa học - kĩ thuật hiện đại đã khắc phục được nạn đói và thiếu ăn kéo dài?",
+        "Đáp án 1": "Thành tựu của cuộc “cách mạng chất xám”",
+        "Đáp án 2": "Thành tựu của cuộc “cách mạng xanh”",
+        "Đáp án 3": "Phát minh ra công cụ sản xuất mới",
+        "Đáp án 4": "Tìm ra phương pháp sinh sản vô tính"
     },
     "question4": {
-        "Câu hỏi": "Than đá là sản phẩm của ngành công nghiệp",
-        "Đáp án 1": "hóa chất",
-        "Đáp án 2": "cơ khí",
-        "Đáp án 3": "năng lượng",
-        "Đáp án 4": "luyện kim"
+        "Câu hỏi": "Trong lịch sử nhân loại, quốc gia đầu tiên đưa con người lên Mặt Trăng là",
+        "Đáp án 1": "Mĩ",
+        "Đáp án 2": "Ấn Độ",
+        "Đáp án 3": "Trung Quốc",
+        "Đáp án 4": "Liên Xô"
     },
     "question5": {
-        "Câu hỏi": "Cho biểu đồ:\n\nTRỊ GIÁ XUẤT KHẨU HÀNG HÓA VÀ DỊCH VỤ CỦA IN-ĐÔ-NÊ-XI-A VÀ PHI-LIP-PIN GIAI ĐOẠN 2015 - 2020\n(Số liệu theo Niên giám thống kê Việt Nam 2021, NXB Thống kê, 2022)\n\nTheo biểu đồ, nhận xét nào sau đây đúng về thay đổi trị giá xuất khẩu hàng hóa và dịch vụ năm 2020 so với năm 2015 của In-đô-nê-xi-a và Phi-lip-pin?",
-        "Đáp án 1": "Phi-lip-pin tăng ít hơn In-đô-nê-xi-a",
-        "Đáp án 2": "Phi-lip-pin tăng chậm hơn In-đô-nê-xi-a",
-        "Đáp án 3": "In-đô-nê-xi-a tăng gấp hai lần Phi-lip-pin",
-        "Đáp án 4": "In-đô-nê-xi-a giảm và Phi-lip-pin tăng"
+        "Câu hỏi": "Chương trình khai thác thuộc địa lần thứ hai của thực dân Pháp ở Đông Dương, trong đó có Việt Nam, được tiền hành khi nào?",
+        "Đáp án 1": "Chiến tranh thế giới thứ nhất bắt đầu",
+        "Đáp án 2": "Sau khi Chiến tranh thế giới thứ nhất kết thúc",
+        "Đáp án 3": "Trong Chiến tranh thế giới thứ nhất",
+        "Đáp án 4": "Sau khi thực dân Pháp hoàn thành xâm lược Việt Nam"
+    },
+    "question6": {
+        "Câu hỏi": "Chiến thắng nào mở ra khả năng quân và dân miền Nam chiến thắng quân Mĩ trong chiến lược “Chiến tranh cục bộ” (1965- 1968)?",
+        "Đáp án 1": "Trà Bồng",
+        "Đáp án 2": "Vạn Tường",
+        "Đáp án 3": "Bắc Ái",
+        "Đáp án 4": "Bình Giã"
+    },
+    "question7": {
+        "Câu hỏi": "Bộ Chính trị Trung ương Đảng đề ra phương hướng chiến lược Đông - Xuân 1953 - 1954 là",
+        "Đáp án 1": "tấn công địch ở Trung du và đồng bằng Bắc Bộ",
+        "Đáp án 2": "tấn công vào các đô thị lớn, trung tâm đầu não chính trị, kinh tế của Pháp",
+        "Đáp án 3": "tấn công địch ở rừng núi, nơi ta có lợi thế thực hiện cách đánh du kích",
+        "Đáp án 4": "tấn công vào những hướng quan trọng về chiến lược mà địch tương đối yếu"
+    },
+    "question8": {
+        "Câu hỏi": "Trong chương trình khai thác thuộc địa lần thứ hai của thực dân Pháp, nắm quyền chỉ huy các ngành kinh tế ở Đông Dương là",
+        "Đáp án 1": "",
+        "Đáp án 2": "",
+        "Đáp án 3": "",
+        "Đáp án 4": ""
     }
 }

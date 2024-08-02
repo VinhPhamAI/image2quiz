@@ -5,13 +5,32 @@ from find_question import return_response_contain_image, return_response_questio
 from search_sentence_in_image import search_sentence, search_question, search_image_belong_question
 import os
 import glob 
+from preprocess import PDF2img, Doc2img, pptx2img
 
-image_path = 'images/dialy2.png' # Đề thi
+image_path = 'images/hanoi.png' # Đề thi
 all_text_path = 'all_text/response.json'
 image_save_path = "image_save/" # Lưu vị trí hình ảnh được detect
 llm_question_image_path = "que_img/response.json"
 file_path = 'folder_check/output.txt'
 
+
+
+def transforming(file_path):
+
+    for file in os.listdir(file_path): 
+        if file.endswith(".png") or file.endswith(".jpg"): 
+            return 
+        elif file.endswith(".pdf"): 
+            pdf = PDF2img(file)
+            result = pdf.convert()
+        elif file.endswith(".docx"):
+            docx = Doc2img(file) 
+            pass
+            
+
+
+
+    pass 
 
 text_ocr = get_text_from_image(image_path)
 with open(file_path, 'r') as file:
