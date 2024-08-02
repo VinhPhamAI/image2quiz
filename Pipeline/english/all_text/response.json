@@ -1,0 +1,16 @@
+{
+    "question1": {
+        "Question": "Which of the following are examples of supervised machine learning?",
+        "Answer1": "Suggesting “who to follow” based on the users that one is already following on social media.",
+        "Answer2": "Analyzing users’ phone locations to study the mobility pattern before and after a lock-down policy.",
+        "Answer3": "Discovering trending Internet memes based on the posts on Reddit",
+        "Answer4": "Detecting potential fraudulent credit card transactions based on irregular transaction location."
+    },
+    "question2": {
+        "Question": "Which of the following statements about feature scaling are correct?",
+        "Answer1": "Feature scaling will change manhattan/euclidean distance, but will not affect cosine similarity.",
+        "Answer2": "When using min-max scaling, one should fit the scaler on training and test data separately.",
+        "Answer3": "A-nearest neighbors classifier is sensitive to feature scaling",
+        "Answer4": "k-means clustering estimate the cluster centers using the mean of the data objects, so scaling the features will not change the clustering result"
+    }
+}

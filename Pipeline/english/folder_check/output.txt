@@ -1,0 +1,19 @@
+‘Multiple Choice Questions. One or more answers can be correct. Please select all that are correct.
+
+(1) Which of the following are examples of supervised machine learning?
+A. Suggesting “who to follow” based on the users that one is already following on social media.
+B. Analyzing users’ phone locations to study the mobility pattem before and after a lock-down policy.
+C. Discovering trending Internet memes based on the posts on Reddit
+
+D. Detecting potential fraudulent credit card transactions based on irregular transaction location.
+
+(2) Which of the following statements about feature scaling are correct?
+
+A. Feature scaling will change manhattan/euclidean distance, but will not affect cosine similarity
+B. When using min-max scaling, one should fit the scaler on training and test data separately.
+
+C. A-nearest neighbors classifier is sensitive to feature scaling
+D
+
+k-means clustering estimate the cluster centers using the mean of the data objects, so scaling the
+features will not change the clustering result

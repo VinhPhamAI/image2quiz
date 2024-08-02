@@ -1,10 +1,9 @@
 from pdf2image import convert_from_path
 from tkinter import *
 from tkinter import messagebox
-# import docx2pdf
+import docx2pdf
 import win32com.client
 import os
-from huggingface_hub import from_pretrained_keras
 from PIL import Image
 
 import numpy as np
@@ -34,20 +33,20 @@ class PDF2img:
             Result = "NO pdf found"
             messagebox.showinfo("Result", Result)
 
-# class Doc2img: 
-#     def __init__(self, folder_path): 
-#         self.folder_path = folder_path
+class Doc2img: 
+    def __init__(self, folder_path): 
+        self.folder_path = folder_path
 
-#     def convert(self, file_path, save_folder):
-#         try: 
-#             docx2pdf.convert(file_path, save_folder)
-#             images = convert_from_path(save_folder)
+    def convert(self, file_path, save_folder):
+        try: 
+            docx2pdf.convert(file_path, save_folder)
+            images = convert_from_path(save_folder)
 
-#             for i in range(len(images)): 
-#                 images[i].save(save_folder + '_' + str(i) , 'PNG')
-#         except : 
-#             result = "No docx found"
-#             messagebox.showinfo("Result", result)
+            for i in range(len(images)): 
+                images[i].save(save_folder + '_' + str(i) , 'PNG')
+        except : 
+            result = "No docx found"
+            messagebox.showinfo("Result", result)
 
 
 

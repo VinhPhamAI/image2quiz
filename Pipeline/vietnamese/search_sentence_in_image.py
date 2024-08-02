@@ -25,14 +25,14 @@ def search_sentence(image_path, sentence):
     gray = cv2.cvtColor(image_cv, cv2.COLOR_BGR2GRAY)
     
     # Perform OCR to extract all text from the image
-    detected_text = pytesseract.image_to_string(gray, lang='viet')
+    detected_text = pytesseract.image_to_string(gray, lang='vie')
     
     # Search for the sentence in the extracted text
     if sentence in detected_text:
         print(f"Sentence '{sentence}' found in the image.")
         
         # Perform OCR to get bounding box information for all text
-        detection_data = pytesseract.image_to_data(gray, output_type=pytesseract.Output.DICT, lang='viet')
+        detection_data = pytesseract.image_to_data(gray, output_type=pytesseract.Output.DICT, lang='vie')
         
         # Convert the OpenCV image to a Pillow image for drawing
         image_pil = Image.fromarray(cv2.cvtColor(image_cv, cv2.COLOR_BGR2RGB))

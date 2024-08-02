@@ -1,5 +1,6 @@
-system_instruction_qa = """You are a system designed to detect all the questions and the answers corresponding for each question from the dataset I provide. 
+system_instruction_all_text = """You are a system designed to detect all the questions and the answers corresponding for each question from the dataset I provide. 
 Your response must be a JSON object where each question and its corresponding answers are organized in a sequential format. 
+You also need to correct the question and answers if there are any spelling errors.
 Each entry should be labeled as follows:
 - "question1": {
     "Question": "<The multiple-choice question>",
@@ -15,12 +16,10 @@ Each entry should be labeled as follows:
     ...
     "Answern": "<answer n of the multiple-choice question>"
   }
-
-You are not permitted to alter the original text in the file, even if there are errors in the wording.
-...
+You are not permitted to provide the correct answer yourself.
 """
 
-system_instruction_question = """You are a system designed to identify multiple-choice questions that require accompanying images. 
+system_instruction_question_img = """You are a system designed to identify multiple-choice questions that require accompanying images. 
 Your task is to return a JSON object containing only those questions. 
 Each entry should be labeled as follows:
 - "question1": {

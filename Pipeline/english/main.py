@@ -1,15 +1,15 @@
 from dla import get_image_position
-from text_vn_recognition import get_text_from_image
+from text_en_recognition import get_text_from_image
 from white_box import white_boxes, extract_bounding_boxes
 from llm import return_response_contain_image, return_response_alltext
 from search_sentence_in_image import search_sentence, search_question, search_image_belong_question
 from update_json_image import find_and_update_json
 
-image_path = 'images/dialy2.png' # Đề thi
-all_text_path = 'all_text/response.json'
+image_path = 'images/test.png' # Đề thi
+all_text_path = 'all_text/response.json' # Nơi chứa file câu hỏi all text
 image_save_path = "image_save/" # Lưu vị trí hình ảnh được detect
-question_image_path = "que_img/response.json"
-file_path = 'folder_check/output.txt'
+question_image_path = "que_img/response.json" # Nơi chứa câu hỏi cần image
+file_path = 'folder_check/output.txt' # Lưu text được OCR
 
 
 text_ocr = get_text_from_image(image_path)
