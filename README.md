@@ -2,5 +2,4 @@
 
 
 # Content 
-## Thư mục Preprocessing 
-- Quá trình tiền xử lý dữ liệu đầu vào : bao gồm module 
+- Cứ như mèo con tắm nắng trong khu vườn nhà
