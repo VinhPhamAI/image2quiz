@@ -14,7 +14,7 @@ def white_boxes(image_path, image_position):
             cv2.rectangle(image, top_left, bottom_right, (255, 255, 255), thickness=-1)
 
     # Lưu hình ảnh đã được bôi trắng
-    output_path = 'images/dialy_white_boxes.png'
+    output_path = 'folder_check/dialy_white_boxes.png'
     cv2.imwrite(output_path, image)
     return output_path
 

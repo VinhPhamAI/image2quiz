@@ -12,8 +12,6 @@ model =  genai.GenerativeModel('gemini-1.5-pro-latest',
 def return_response(content, output_path, model = model):
     
     response = model.generate_content(content)
-
-    print(response.text)
     # In ra kết quảa
     json_str = (response.text).strip('```json\n').strip('```')
     # Chuyển đổi chuỗi JSON thành đối tượng Python

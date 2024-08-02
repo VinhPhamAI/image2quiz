@@ -32,7 +32,7 @@ else :
     # LLM detect các câu cần image trước.
     return_response(content, llm_question_image_path)
     # Tìm image đó thuộc question nào và assign nó cho câu hỏi đó.
-
+    
     # Đưa vào LLM và dùng spell checking để nhận diện những câu còn lại.
 
     # Output : json file (Nếu câu đó yêu cầu ảnh thì đính kèm thêm link folder chứa ảnh đó)
