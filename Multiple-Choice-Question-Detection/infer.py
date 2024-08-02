@@ -58,13 +58,11 @@ class Model:
             sub_img = image.copy()
             sub_img = sub_img[start_box[1]:end_box[1], start_box[0]:end_box[0]]
 
-            if box.cls == 8 or box.cls == 6: 
+            if box.cls == 8 : 
                 self.image_in_img.append(sub_img)
                 # lưu vị trí ảnh vào trong dictionary 
                 self.img_position[len(self.image_in_img) - 1] =  {(start_box, end_box)}
 
-                continue 
-            if box.cls in [2, 3, 9]: 
                 self.text_in_img.append(sub_img)
                 continue 
             
