@@ -43,11 +43,7 @@ class Model:
         # chạy model 
         result = self.model.predict(source = image, conf = 0.2, iou = 0.8)
 
-<<<<<<< HEAD
-        result[0].save("result.png")
-=======
         # result[0].save("result.png")
->>>>>>> origin/trung_dev
         # duyệt qua từng box của ảnh 
         boxes = result[0].boxes
 
@@ -114,13 +110,6 @@ class Model:
     
 
 if __name__ == '__main__': 
-<<<<<<< HEAD
-    model = Model('dla.pt')
-    model.detect('hinhhoc.png')
-    img_position = model.img_position
-    # lấy vị trí ảnh 
-    print(model.img_position)
-=======
     model = Model('Multiple-Choice-Question-Detection/best.pt')
     model.detect('Multiple-Choice-Question-Detection/8-de-thi-vao-lop-10-mon-toan-01.png')
     
@@ -129,7 +118,6 @@ if __name__ == '__main__':
     
 
 
->>>>>>> origin/trung_dev
 
 
 

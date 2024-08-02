@@ -15,22 +15,7 @@ file_path = 'folder_check/output.txt'
 
 
 
-def transforming(file_path):
 
-    for file in os.listdir(file_path): 
-        if file.endswith(".png") or file.endswith(".jpg"): 
-            return 
-        elif file.endswith(".pdf"): 
-            pdf = PDF2img(file)
-            result = pdf.convert()
-        elif file.endswith(".docx"):
-            docx = Doc2img(file) 
-            pass
-            
-
-
-
-    pass 
 
 text_ocr = get_text_from_image(image_path)
 with open(file_path, 'r') as file:
