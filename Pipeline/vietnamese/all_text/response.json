@@ -1,37 +1,30 @@
 {
     "question1": {
-        "Câu hỏi": "Cho bảng số liệu:\nTỔNG DỰ TRỮ QUỐC TẾ CỦA MỘT SỐ QUỐC GIA NĂM 2015 VÀ NĂM 2020\n(Đơn vị: Triệu đô la Mỹ)\nNăm | Lào | Thái Lan | Việt Nam | In-đô-nê-xi-a\n------- | -------- | -------- | -------- | --------\n2015 | 1043 | 151266 | 28250 | 103268\n2020 | 1393 | 248743 | 94834 | 131139\n\n(Nguồn: Niên giám thống kê Việt Nam 2021, NXB Thống kê, 2022)\n\nTheo bảng số liệu, nhận xét nào sau đây đúng khi so sánh tổng dự trữ quốc tế của một số quốc gia năm 2020 với năm 2015?",
-        "Đáp án 1": "Việt Nam tăng chậm hơn In-đô-nê-xi-a.",
-        "Đáp án 2": "In-đô-nê-xi-a tăng nhanh hơn Lào.",
-        "Đáp án 3": "Thái Lan tăng chậm hơn Việt Nam.",
-        "Đáp án 4": "Lào tăng nhanh hơn Thái Lan."
+        "Câu hỏi": "Một viên gạch hoa hình vuông cạnh 40cm. Người thiết kế đã sử dụng bốn đường parabol có chung đỉnh tại tâm viên gạch để tạo ra bồn cánh hoa (được tô màu sẫm như hình vẽ bên).\n\nDiện tích mỗi cánh hoa của viên gạch bằng",
+        "Đáp án 1": "800cm²",
+        "Đáp án 2": "250cm²",
+        "Đáp án 3": "𝝅cm²",
+        "Đáp án 4": "8𝝅cm²"
     },
     "question2": {
-        "Câu hỏi": "Căn cứ vào Atlat Địa lí Việt Nam trang Khí hậu, cho biết trong các trạm khí tượng sau đây, trạm nào có nhiệt độ tháng XII cao nhất?",
-        "Đáp án 1": "Sa Pa.",
-        "Đáp án 2": "Lạng Sơn.",
-        "Đáp án 3": "Cần Thơ.",
-        "Đáp án 4": "Điện Biên Phủ."
+        "Câu hỏi": "Cho hàm số y = ƒ(x) có bảng xét dấu đạo hàm như sau:\n\nx     (-∞)   (-3)   1   (+∞)\nf'(x)  +      0    -    0    +\n\nCó bao nhiêu giá trị nguyên của tham số m thuộc đoạn [-14; 14] để hàm số g(x) = ƒ(x² + 3x - m) đồng biến trên khoảng (0; 2)?",
+        "Đáp án 1": "15",
+        "Đáp án 2": "14",
+        "Đáp án 3": "16",
+        "Đáp án 4": "17"
     },
     "question3": {
-        "Câu hỏi": "Căn cứ vào Atlat Địa lí Việt Nam trang Các ngành công nghiệp trọng điểm, cho biết nhà máy nhiệt điện nào có công suất lớn nhất trong các nhà máy sau đây?",
-        "Đáp án 1": "Ninh Bình.",
-        "Đáp án 2": "Na Dương.",
-        "Đáp án 3": "Uông Bí.",
-        "Đáp án 4": "Phả Lại."
+        "Câu hỏi": "Cho a, b là hai số thực dương phân biệt khác 1 thỏa mãn logₐ(a²)⋅logₙ(b²) + 2logₐ(a⁰) = 0. Tính logₙ(ab²).",
+        "Đáp án 1": "3",
+        "Đáp án 2": "10",
+        "Đáp án 3": "9",
+        "Đáp án 4": "7"
     },
     "question4": {
-        "Câu hỏi": "Than đá là sản phẩm của ngành công nghiệp",
-        "Đáp án 1": "hóa chất.",
-        "Đáp án 2": "cơ khí.",
-        "Đáp án 3": "năng lượng.",
-        "Đáp án 4": "luyện kim."
-    },
-    "question5": {
-        "Câu hỏi": "Cho biểu đồ:\n\nTRỊ GIÁ XUẤT KHẨU HÀNG HÓA VÀ DỊCH VỤ CỦA IN-ĐÔ-NÊ-XI-A VÀ PHI-LIP-PIN GIAI ĐOẠN 2015 - 2020\n(Số liệu theo Niên giám thống kê Việt Nam 2021, NXB Thống kê, 2022)\n\nTheo biểu đồ, nhận xét nào sau đây đúng về thay đổi trị giá xuất khẩu hàng hóa và dịch vụ năm 2020 so với năm 2015 của In-đô-nê-xi-a và Phi-lip-pin?",
-        "Đáp án 1": "Phi-lip-pin tăng ít hơn In-đô-nê-xi-a.",
-        "Đáp án 2": "Phi-lip-pin tăng chậm hơn In-đô-nê-xi-a.",
-        "Đáp án 3": "In-đô-nê-xi-a tăng gấp hai lần Phi-lip-pin.",
-        "Đáp án 4": "In-đô-nê-xi-a giảm và Phi-lip-pin tăng."
+        "Câu hỏi": "Cho hai hàm số f(x) = ax² + bx + c và g(x) = dx² + ex + 1 (a, b, c, d, e ∈ R). Biết rằng đồ thị hàm số y = ƒ(x) và y = g(x) cắt nhau tại 3 điểm có hoành độ lần lượt là -3; -1; 1 (tham khảo hình vẽ). Hình phẳng giới hạn bởi 2 đồ thị đã cho có diện tích bằng",
+        "Đáp án 1": "5",
+        "Đáp án 2": "4",
+        "Đáp án 3": "6",
+        "Đáp án 4": "8"
     }
 }

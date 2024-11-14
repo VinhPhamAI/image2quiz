@@ -5,7 +5,7 @@ from llm import return_response_contain_image, return_response_alltext
 from search_sentence_in_image import search_sentence, search_question, search_image_belong_question
 from update_json_image import find_and_update_json
 
-image_path = 'images/dialy2.png' # Đề thi
+image_path = 'images/pdf_5.png' # Đề thi
 all_text_path = 'all_text/response.json'
 image_save_path = "image_save/" # Lưu vị trí hình ảnh được detect
 question_image_path = "que_img/response.json"

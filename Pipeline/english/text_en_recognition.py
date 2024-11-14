@@ -11,3 +11,5 @@ def get_text_from_image(path):
         file.write(result)
         
     return result
+
+get_text_from_image("images/nlp.png")

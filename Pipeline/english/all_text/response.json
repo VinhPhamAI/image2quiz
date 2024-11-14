@@ -1,16 +1,27 @@
 {
     "question1": {
-        "Question": "Which of the following are examples of supervised machine learning?",
-        "Answer1": "Suggesting “who to follow” based on the users that one is already following on social media.",
-        "Answer2": "Analyzing users’ phone locations to study the mobility pattern before and after a lock-down policy.",
-        "Answer3": "Discovering trending Internet memes based on the posts on Reddit",
-        "Answer4": "Detecting potential fraudulent credit card transactions based on irregular transaction location."
+        "Question": "What is the funny phrase surrounding the making of excuses, especially as it relates to our environment?",
+        "Answer1": "Snickers Defense",
+        "Answer2": "Twinkie Defense",
+        "Answer3": "Krispy Kreme Defense",
+        "Answer4": "Oreo Defense"
     },
     "question2": {
-        "Question": "Which of the following statements about feature scaling are correct?",
-        "Answer1": "Feature scaling will change manhattan/euclidean distance, but will not affect cosine similarity.",
-        "Answer2": "When using min-max scaling, one should fit the scaler on training and test data separately.",
-        "Answer3": "A-nearest neighbors classifier is sensitive to feature scaling",
-        "Answer4": "k-means clustering estimate the cluster centers using the mean of the data objects, so scaling the features will not change the clustering result"
+        "Question": "According to class discussion, the terms ethics and morality can be used interchangeably?",
+        "Answer1": "True",
+        "Answer2": "False"
+    },
+    "question3": {
+        "Question": "Which category of moral actions states that acts are either mandated or prohibited?",
+        "Answer1": "Morally permissable",
+        "Answer2": "Moral supererogatory",
+        "Answer3": "Morally obligatory"
+    },
+    "question4": {
+        "Question": "Which met ethical side states that morality is different for different people?",
+        "Answer1": "Relativist",
+        "Answer2": "Universalist",
+        "Answer3": "Cultural Relativism",
+        "Answer4": "Ethical Egoism"
     }
 }

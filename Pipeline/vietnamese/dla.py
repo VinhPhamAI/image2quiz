@@ -111,7 +111,7 @@ class Model:
 
 def get_image_position(path):
     model = Model('dla.pt')
-    model.detect(path)
+    model.detect(path)  
     img_position = model.img_position
     return img_position
 

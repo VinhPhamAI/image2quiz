@@ -1,15 +1,17 @@
 from ultralytics import YOLO
 import cv2 
-import matplotlib.pyplot as plt  
 import os 
 import json
+from img2table.document import Image
+from io import BytesIO
+from PIL import Image as PILImage
 
 # dựng tạm một class model để infer ra kết quả với input vào là ảnh 
 '''
 names: {0: 'Caption', 1: 'Footnote', 2: 'Formula', 3: 'List-item', 4: 'Page-footer', 5: 'Page-header', 
         6: 'Picture', 7: 'Section-header', 8: 'Table', 9: 'Text', 10: 'Title'}
 '''
-class Model: 
+class FigureDetectionModel: 
     def __init__(self, path): 
         # khởi tạo model 
         self.model = YOLO(path)
@@ -33,9 +35,10 @@ class Model:
         self.text_in_img = []
         # vị trí của ảnh - return (top left - bottom right)
         self.img_position = {}
+        self.table_position = []
         self.BOX_PADDING = 2
 
-    def detect(self, image_path):
+    def detect(self, image_path, output_path="folder_check/dla_result.png"):
         # load ảnh 
         image = cv2.imread(image_path)
 
@@ -43,7 +46,7 @@ class Model:
         # chạy model 
         result = self.model.predict(source = image, conf = 0.2, iou = 0.8)
 
-        result[0].save("folder_check/dla_result.png")
+        result[0].save(output_path)
         # duyệt qua từng box của ảnh 
         boxes = result[0].boxes
 
@@ -59,7 +62,7 @@ class Model:
             sub_img = image.copy()
             sub_img = sub_img[start_box[1]:end_box[1], start_box[0]:end_box[0]]
 
-            if box.cls == 8 or box.cls == 6: 
+            if box.cls == 6: 
                 self.image_in_img.append(sub_img)
                 # lưu vị trí ảnh vào trong dictionary 
                 self.img_position[len(self.image_in_img) - 1] =  {(start_box, end_box)}
@@ -68,25 +71,36 @@ class Model:
             if box.cls in [2, 3, 9]: 
                 self.text_in_img.append(sub_img)
                 continue 
+    
+    def table_detect(self, image_path, output_path="folder_check/tbl_result.png"):
+        # Load the image
+        img = Image(src=image_path)
+        table_img = cv2.imread(image_path)
+
+        extracted_tables = img.extract_tables()
+        # Initialize variables for overall table bounding box
+        min_x1 = min_y1 = float('inf')
+        max_x2 = max_y2 = float('-inf')
+        if(len(extracted_tables) > 0):
+            # Draw rectangles around the cells and calculate table bounding box
+            for table in extracted_tables:
+                for row in table.content.values():
+                    for cell in row:
+                        # Update overall bounding box
+                        min_x1 = min(min_x1, cell.bbox.x1)
+                        min_y1 = min(min_y1, cell.bbox.y1)
+                        max_x2 = max(max_x2, cell.bbox.x2)
+                        max_y2 = max(max_y2, cell.bbox.y2)
+                        
+                        # Draw rectangle around each cell
+                        cv2.rectangle(table_img, (cell.bbox.x1, cell.bbox.y1), (cell.bbox.x2, cell.bbox.y2), (255, 0, 0), 2)
             
+            # Draw rectangle around the entire table
+            cv2.rectangle(table_img, (min_x1, min_y1), (max_x2, max_y2), (0, 255, 0), 2)
 
-
-    def display(self, img, dpi = 80 ): 
-
-        # lấy chiều cao, chiều rộng của ảnh 
-        height, width, = img.shape[0], img.shape[1]
-
-        figsize = (height / float(dpi), width / float(dpi))
-
-        fig, ax = plt.subplots(figsize = figsize)
-
-        ax.axis("off")
-        ax.imshow(img, cmap = 'gray')
-
-        plt.show()
-
-        
-
+            cv2.imwrite(output_path, table_img)    
+            # Return the bounding box of the entire table
+            self.table_position.append(((min_x1, min_y1), (max_x2, max_y2)))
     # lưu lại ảnh vào trong folder_path 
     def save(self, folder_path): 
         cwd = os.getcwd()        
@@ -103,17 +117,34 @@ class Model:
         for i in range(len(self.text_in_img)): 
             cv2.imwrite(text_file_path + str(i) + '.png', self.text_in_img[i])
 
-
-    def test(self, image_path): 
-        result = self.detect(image_path)
-        return result
     
 
 def get_image_position(path):
-    model = Model('dla.pt')
+    model = FigureDetectionModel('dla.pt')
     model.detect(path)
+    model.table_detect(path)
     img_position = model.img_position
+    table_position = model.table_position
+    if (len(table_position) == 0):
+        return img_position, []
+    return img_position, table_position
+
+def merge_table_detection(img_position, table_detection):
+    # Xác định khóa cuối cùng trong img_position
+    if img_position:
+        last_key = max(img_position.keys())
+    else:
+        # Nếu img_position rỗng, khởi tạo khóa đầu tiên là 0
+        last_key = 0
+    
+    # Tạo từ điển với khóa là khóa cuối cùng và giá trị là tập hợp các tọa độ từ table_detection
+    table_detection_dict = {last_key+1: set(table_detection)}
+
+    # Cập nhật img_position với table_detection
+    img_position.update(table_detection_dict)
+    
     return img_position
+
 
 
 

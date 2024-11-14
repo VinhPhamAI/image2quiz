@@ -1,16 +1,14 @@
-from dla import get_image_position
+from dla import get_image_position, merge_table_detection
 from text_en_recognition import get_text_from_image
 from white_box import white_boxes, extract_bounding_boxes
 from llm import return_response_contain_image, return_response_alltext
-from search_sentence_in_image import search_sentence, search_question, search_image_belong_question
-from update_json_image import find_and_update_json
+from search_sentence_in_image import search_sentence, search_question, search_image_belong_question, find_and_update_json
 
-image_path = 'images/test.png' # Đề thi
+image_path = 'images/md.png' # Đề thi
 all_text_path = 'all_text/response.json' # Nơi chứa file câu hỏi all text
 image_save_path = "image_save/" # Lưu vị trí hình ảnh được detect
 question_image_path = "que_img/response.json" # Nơi chứa câu hỏi cần image
-file_path = 'folder_check/output.txt' # Lưu text được OCR
-
+file_path = 'folder_check/output.txt' # file text được OCR
 
 text_ocr = get_text_from_image(image_path)
 with open(file_path, 'r') as file:
@@ -21,7 +19,8 @@ return_response_alltext(content, all_text_path)
 image_position = get_image_position(image_path)
 print(image_position)
 print(len((image_position)))
-
+image_position, table_position = get_image_position(image_path)
+image_position = merge_table_detection(image_position, table_position)
 
 # Trường hợp không có ảnh nào xuất hiện (thuần text)
 if (len(image_position) > 0):
